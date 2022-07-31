@@ -6,7 +6,6 @@ class ContactForm extends React.Component {
   state = {
     name: '',
     number: '',
-    
   };
 
   formId = nanoid();
@@ -51,6 +50,7 @@ class ContactForm extends React.Component {
             value={this.state.number}
             onChange={this.formChange}
             id={this.formId}
+            className={css.input}
           />
         </label>
         <button>Add contact</button>

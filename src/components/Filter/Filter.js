@@ -1,7 +1,9 @@
+import css from 'components/Filter/Filter.module.css'
+
 const Filter = ({ value, onChange }) => {
   return (
     <>
-      <h2>Find contacts by name</h2>
+      <h2 className={css.h2}>Find contacts by name</h2>
       <label>
         <input type="text" value={value} onChange={onChange} />
       </label>

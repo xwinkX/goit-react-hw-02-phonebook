@@ -60,11 +60,11 @@ state = {
     return (
       <div
         style={{
-          // display: 'flex',
-          // flexDirection: 'column',
-          // justifyContent: 'center',
-          // alignItems: 'center',
-          fontSize: 30,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: 16,
           color: '#010101'
         }}
       >
