@@ -6,12 +6,13 @@ class ContactForm extends React.Component {
   state = {
     name: '',
     number: '',
-    // id: '',
+    
   };
 
   formId = nanoid();
+
   formChange = event => {
-    const { name, value } = event.currentTarget;
+    const { value } = event.currentTarget;
     this.setState({ [event.currentTarget.name]: value });
   };
   formSubmit = event => {
