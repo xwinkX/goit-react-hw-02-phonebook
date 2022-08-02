@@ -72,7 +72,7 @@ state = {
         <ContactForm onSubmit={this.addContact} />
         <h2>Contacts</h2>
         <Filter value={filter} onChange={this.changeFilter} />
-        <ContactList contacts={visibleContacts} onDeleteContacts={this.deleteContacts} />
+        <ContactList contacts={visibleContacts} onDeleteContacts={this.deleteContacts}/>
       </div>
     );
   };
