@@ -1,8 +1,8 @@
 import css from 'components/ContactItem/ContactItem.module.css';
 import PropTypes from 'prop-types';
 
-const ContactItem = ({ contacts, onDeleteContacts }) => {
-  return contacts.map(({ id, name, number }) => (
+const ContactItem = ({ id, name, number, onDeleteContacts }) => {
+  return (
     <li key={id} className={css.li}>
       <p className={css.p}>{name}</p>
       <p>{number}</p>
@@ -10,7 +10,7 @@ const ContactItem = ({ contacts, onDeleteContacts }) => {
         Удалить
       </button>
     </li>
-  ));
+  );
 };
 
 export default ContactItem;
